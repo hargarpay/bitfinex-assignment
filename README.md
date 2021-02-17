@@ -8,4 +8,4 @@
         - This is use to submit order to the orderBooks instance on the client
     - GET `http://localhost:<client-port>/broadcast-order`
         - This is use handle the broadcast from the server to all clients except the client that submitted the order.
-- The **broadcast_order** is only annouce whenever the order is submitted by client. This broadcast to all clients except the client that create the order.
+- The **broadcast_order** is only annouce whenever the order is submitted by client. This broadcast to all clients except the client that submit the order.
