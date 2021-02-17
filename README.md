@@ -1,0 +1,11 @@
+### DOCUMENTATION ON 
+- The server annouce **add_client** and **submit_order**, every 1 second
+- Each client instantiate orderBooks when client start running
+- Every clients has three APIs, 2 GET methods and 1 POST method
+    - GET - `http://localhost:<client-port>/add-client`
+        - This is use to add client port or client_id to the server with the DHT
+    - POST - `http://localhost:<client-port>/submit-order`
+        - This is use to submit order to the orderBooks instance on the client
+    - GET `http://localhost:<client-port>/broadcast-order`
+        - This is use handle the broadcast from the server to all clients except the client that submitted the order.
+- The **broadcast_order** is only annouce whenever the order is submitted by client. This broadcast to all clients except the client that create the order.

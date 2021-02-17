@@ -1,0 +1,19 @@
+{
+  "name": "bitfinex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "grenache-nodejs-http": "^0.7.12",
+    "grenache-nodejs-link": "^0.7.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "server": "nodemon server.js",
+    "client1": "nodemon client.js client_1 5001",
+    "client2": "nodemon client.js client_2 5002",
+    "client3": "nodemon client.js client_3 5003"
+  }
+}
